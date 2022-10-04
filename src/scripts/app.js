@@ -1,7 +1,9 @@
 $('.banner-slider').slick({
     dots: true,
     prevArrow:false,
-    nextArrow:false
+    nextArrow:false,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
 
 $('.work__img').slick({
