@@ -1,0 +1,51 @@
+.banner {
+    padding-top: 140px;
+    background-color: $bannerColor;
+    &-slider {
+        width: 100%;
+    }
+    &__container {  
+        overflow: hidden;     
+        position: relative;   
+        margin-top: 20px;
+        margin-bottom: 13px;
+        background-image: linear-gradient(to top,#d05332,#d15332);
+    }
+    .content {  
+        color: #fff;
+        font-family: 'lato';
+        font-weight: 700;
+        width: 36%;
+        padding-top: 100px;
+        padding-left: 60px;
+        padding-bottom: 120px;
+        line-height: calc(55/50);
+    }
+    .coffee {
+        position: absolute;
+        top: -12px;
+        right: 390px;
+    }
+    .messenger {
+        position: absolute;
+        top: -50px;
+        right: -235px;
+    }     
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap:  0 25px;
+    padding-bottom: 13px;
+    button {
+        font-size: 0;
+        width: 14px;
+        height: 14px;
+        border-radius: 100rem;
+        background-color: #71a3a7;    
+    }
+}
+.slick-active button {
+    background-color: #fff;
+}
+

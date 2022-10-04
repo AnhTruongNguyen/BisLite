@@ -1,0 +1,47 @@
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+   
+}
+.header {
+    max-width: 1400px;
+}
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+body {
+    font-family: Arial;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 15px;
+    line-height: calc(20/15);
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.logo {
+    display: flex;
+    h1 {
+        font-family: 'lato';
+        font-weight: 900;
+        color: $textClolor;
+        
+    }
+    span {
+        color: #2aacc8;
+        font-size: 50px;
+        font-family: 'lato';
+        font-weight: 400;
+    }
+}

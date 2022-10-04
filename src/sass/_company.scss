@@ -1,0 +1,62 @@
+.company{ 
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &__container {
+        display: flex;
+        gap: 0 90px;
+    }
+
+    &__content {
+        width: 46%;
+    
+    }
+    
+    &__title {
+        display: flex;
+        gap: 0 15px;
+        padding-bottom: 12px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(24/14);
+        color: #363636;
+        padding-bottom: 28px;
+    }
+
+    span {
+        font-style: italic;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: calc(24/14);
+        color: #363636;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        .list-logo {
+            
+            flex: 1;
+            gap: 0 0;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+           
+            img {
+                margin: auto;
+                position: relative;
+                &::before {
+                    z-index: 10;
+                    position: absolute;
+                    content: url('../img/company/list-logo/logobg.png');
+                }
+               
+            }
+        }
+    }
+
+   
+}

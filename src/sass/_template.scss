@@ -1,0 +1,26 @@
+.template {
+    padding-bottom: 40px;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 0 80px;
+        padding: 30px;
+        border: 1px solid #81e4ed;
+        background-color: #e8fcfe;
+        p {
+            width: 61.5%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: calc(26/16);
+            color: $grayColor;
+        }
+    }
+    .download-btn {
+        align-items: center;
+        border-radius: 10px;
+        display: inline-flex;
+        gap: 0 20px;
+        padding: 18px;
+        background-image: linear-gradient(to bottom,#80e3ec,#40bad1);
+    }
+}
