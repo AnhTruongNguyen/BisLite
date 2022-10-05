@@ -140,6 +140,7 @@ button {
   width: 100%;
   z-index: 99;
   background-color: #e8ebf1;
+  box-shadow: 0 1px 6px #6ec2ca;
 }
 .header__container {
   display: flex;
@@ -465,8 +466,6 @@ button {
 }
 .work {
   padding-top: 20px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #dfe1e5;
 }
 .work__begin {
   display: flex;
@@ -493,6 +492,8 @@ button {
 .work__img {
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dfe1e5;
 }
 .work__img .img {
   position: relative;
@@ -562,7 +563,7 @@ button {
 }
 .company__container {
   display: flex;
-  gap: 0 90px;
+  justify-content: space-between;
 }
 .company__content {
   width: 46%;
@@ -591,23 +592,20 @@ button {
   flex-direction: column;
 }
 .company__logo .list-logo {
-  flex: 1;
-  gap: 0 0;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-.company__logo .list-logo img {
+.company__logo .list-logo .img {
   margin: auto;
-  position: relative;
-}
-.company__logo .list-logo img::before {
-  z-index: 10;
-  position: absolute;
-  content: url("../img/company/list-logo/logobg.png");
 }
 
+@media screen and (max-width: 1023.98px) {
+  .company__container {
+    gap: 0 60px;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .company__container {
     flex-direction: column-reverse;

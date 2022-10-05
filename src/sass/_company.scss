@@ -3,7 +3,7 @@
     padding-bottom: 40px;
     &__container {
         display: flex;
-        gap: 0 90px;
+        justify-content: space-between;
     }
     &__content {
         width: 46%;    
@@ -30,25 +30,23 @@
     &__logo {
         display: flex;
         flex-direction: column;
-        .list-logo {           
-            flex: 1;
-            gap: 0 0;
+        .list-logo {   
             display: grid;
             align-items: center;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;         
-            img {
+            grid-template-rows: 1fr 1fr;          
+            .img {
                 margin: auto;
-                position: relative;
-                &::before {
-                    z-index: 10;
-                    position: absolute;
-                    content: url('../img/company/list-logo/logobg.png');
-                }             
             }
         }
     }  
 }
+@media screen and (max-width: 1023.98px) {
+    .company__container {
+        gap: 0 60px;
+    }
+}
+
 @media screen and (max-width: 767.98px) {
     .company {
         &__container {

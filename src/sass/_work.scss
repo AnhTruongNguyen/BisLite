@@ -1,8 +1,5 @@
 .work {
     padding-top: 20px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #dfe1e5;
-
     &__begin {
         display: flex;
         justify-content: space-between;
@@ -19,7 +16,6 @@
             font-weight: 700;
         }
     }
-
     &__arrow {
         width: 20px;
         height: 20px;
@@ -29,6 +25,8 @@
     &__img {   
         width: 100%;
         padding-top: 20px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #dfe1e5;
         .img {
             position: relative;
             &:hover {             
@@ -50,15 +48,12 @@
                 transition: all 0.2s linear;
             }
         }
-       
-
     }
     // slick slider
     .slick-track {
         display: flex;
         gap: 0 40px;
-        margin-left: -80px;
-        
+        margin-left: -80px;      
     }
     .slick-slide {
         height: auto;
@@ -86,8 +81,6 @@
         }
     }
 }
-
-
 @media screen and (max-width: 1023.98px) {
     .work {
         .slick-track {
