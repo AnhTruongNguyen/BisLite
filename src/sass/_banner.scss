@@ -1,6 +1,7 @@
 .banner {
     padding-top: 140px;
     background-color: $bannerColor;
+    
     &-slider {
         width: 100%;
     }
@@ -10,6 +11,9 @@
         margin-top: 20px;
         margin-bottom: 13px;
         background-image: linear-gradient(to top,#d05332,#d15332);
+        &:hover {
+        cursor: pointer;
+       }
     }
     .content {  
         color: #fff;
@@ -45,6 +49,7 @@
         background-color: #71a3a7;    
     }
 }
+
 .slick-active button {
     background-color: #fff;
 }

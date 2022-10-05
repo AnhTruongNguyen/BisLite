@@ -308,6 +308,9 @@ button {
   margin-bottom: 13px;
   background-image: linear-gradient(to top, #d05332, #d15332);
 }
+.banner__container:hover {
+  cursor: pointer;
+}
 .banner .content {
   color: #fff;
   font-family: "lato";
@@ -599,6 +602,9 @@ button {
 }
 .company__logo .list-logo .img {
   margin: auto;
+}
+.company__logo .list-logo .img:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1023.98px) {

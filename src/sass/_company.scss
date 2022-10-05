@@ -37,6 +37,9 @@
             grid-template-rows: 1fr 1fr;          
             .img {
                 margin: auto;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }  
