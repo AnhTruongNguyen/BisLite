@@ -1,5 +1,4 @@
-.menu {    
-   
+.menu {     
     display: flex;
     padding-right: 6px;
     gap: 0 26px;
@@ -25,8 +24,6 @@
             }
         }   
     }
-   
-    
     &>li:hover > a {
         border-top: 5px solid #2aacc8;
         background-color: #fff;
@@ -65,3 +62,11 @@
         }
     }
 }
+
+@media screen and (max-width: 1023.98px) {
+    .menu {
+        display: none;
+    }
+}
+
+

@@ -1,4 +1,4 @@
-.section {
+.section { 
     .container {
         display: flex;
         gap: 0 43px;
@@ -54,3 +54,33 @@
         }
     }
 }
+@media screen and (max-width: 1023.98px) {
+    .section {
+        .container {        
+            gap: 0 30px;
+        }
+        &__container:nth-child(1){
+            padding-top: 49px;        
+            .section__title {
+              padding-bottom: 26px;
+                .img {
+                    margin-top: 21px;
+                }
+            }
+        }       
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .section {
+        padding-bottom: 40px;
+        .container {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        &__container {
+            width: 100%;           
+        }
+    }
+}
+

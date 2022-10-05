@@ -49,3 +49,40 @@
     background-color: #fff;
 }
 
+
+@media screen and (max-width: 1023.98px) {
+    .banner {
+        padding-top: 90px;
+        .content {
+            padding: 455px 60px 41px 60px;
+            width: 100%;
+        }
+        .coffee {
+            right: 440px;
+        }
+    }
+    .slick-dots {
+        gap: 0 18px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .banner{
+        .messenger {
+            display: none;
+        }
+        .coffee {
+            right: 89px;
+            width: 50%;
+        }
+        .content {
+            font-size: 27px;
+            padding: 363px 22px 41px 22px
+        
+        }
+    }
+    .slick-dots {
+        gap: 0 12px;
+    }
+}
+
+

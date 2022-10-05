@@ -1,9 +1,9 @@
 .template {
     padding-bottom: 40px;
     &__container {
+        justify-content: space-between;
         display: flex;
         align-items: center;
-        gap: 0 80px;
         padding: 30px;
         border: 1px solid #81e4ed;
         background-color: #e8fcfe;
@@ -22,5 +22,17 @@
         gap: 0 20px;
         padding: 18px;
         background-image: linear-gradient(to bottom,#80e3ec,#40bad1);
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .template {
+        &__container {
+          flex-direction: column;
+          gap: 30px 0;
+          p {
+            width: 100%;
+          }
+        }
     }
 }
