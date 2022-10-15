@@ -1,14 +1,14 @@
-.menu {     
+.menu {  
+    padding-top: 11px;   
     display: flex;
-    padding-right: 6px;
-    gap: 0 26px;
+    padding-right: 15px;
     text-transform: uppercase;
     a {
         line-height: calc(20/13);
         font-size: 13px;
         color: $textClolor;
         font-weight: 700;
-        padding: 10px 12px;
+        padding: 10px 3px;
         img {
             margin-left: 10px;
             margin-bottom: 2px;
@@ -30,7 +30,22 @@
         img {
             color: #000;
         }
-    } 
+    }
+    li:last-child {
+        padding-left: 44px;
+    }
+    li:nth-child(5) {
+        padding-left: 28px;
+    }
+    li:nth-child(4) {
+        padding-left: 28px;
+    }
+    li:nth-child(3) {
+        padding-left: 44px;
+    }
+    li:nth-child(2) {
+        padding-left: 44px;
+    }
     li {
         position: relative;
         &:hover .subnav {

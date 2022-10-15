@@ -1,8 +1,10 @@
 .section { 
     .container {
         display: flex;
-        gap: 0 43px;
+        gap: 0 44px;
         padding-bottom: 50px;
+        padding-top: 6px;
+        padding-left: 22px;
     }
     background-color: #e8ebf1;
     &__container {
@@ -11,12 +13,12 @@
         display: flex;
         flex-direction: column;
     }
-    &__title {      
+    &__title {    
+        padding-left: 2px;  
         display: flex;
         align-items: center;
-        gap: 0 20px;
         text-transform: uppercase;
-        padding-bottom: 18px;
+        padding-bottom: 21px;
         .img {
             z-index: 20;
             display: flex;
@@ -36,22 +38,75 @@
         h2 {
             font-weight: 700;
         }
+       
+    }
+    &__container:first-child {
+        h2 {
+            margin-top: -6px;
+            padding-left: 28px;
+        }
+        p {
+            padding-top: 2px;
+            margin-left: -6px;
+        }
+    }
+    &__container:last-child {
+        h2 {
+            margin-top: -6px;
+            padding-left: 27px;
+        }
+    }
+    &__container:nth-child(2) {
+        .section__title {
+            padding-top: 3px;
+            padding-left: 3px;
+            padding-bottom: 28px;
+        }
+        h2 {
+            margin-top: -5px;
+            padding-left: 29px;
+        }
+        p {
+            margin-left: -6px;
+        }
+    }
+    &__container:nth-child(3) {
+        .section__title {
+            padding-top: 2px;
+            padding-left: 6px;
+            img {
+                padding-top: 3px;
+            }
+        }
+        h2 {
+            margin-top: -3px;
+            padding-left: 32px;
+        }
+        p {
+            padding-top: 5px;
+             margin-left: -2px;
+
+        }
     }
     &__content {
         font-size: 13px;
         font-weight: 400;
         line-height: calc(20/13);
-        padding-bottom: 25px;
+        padding-bottom: 18px;
         p {
             color: #363636;
         }
+        
     }
     &__btn {
         margin-top: auto;
         display: flex;
         align-items: center;
-        gap: 0 9px;
+        gap: 0 14px;
         cursor: pointer;
+        font-size: 13px;
+        font-weight: 400;
+        margin-left: -6px;
         p {
             color: #2aacc8;
         }

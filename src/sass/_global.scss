@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
     font-size: 15px;
-    line-height: calc(20/15);
+    line-height: 1.4;
     text-transform: uppercase;
 }
 
@@ -31,10 +31,11 @@ button {
 }
 
 .logo {
+    margin-left: -3px;
     display: flex;
     h1 {
         font-family: 'lato';
-        font-weight: 900;
+        font-weight: 800;
         color: $textClolor;
         
     }

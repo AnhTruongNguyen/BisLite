@@ -110,7 +110,7 @@ h1 {
 
 h2 {
   font-size: 15px;
-  line-height: 1.3333333333;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
@@ -121,11 +121,12 @@ button {
 }
 
 .logo {
+  margin-left: -3px;
   display: flex;
 }
 .logo h1 {
   font-family: "lato";
-  font-weight: 900;
+  font-weight: 800;
   color: #000;
 }
 .logo span {
@@ -144,8 +145,8 @@ button {
 }
 .header__container {
   display: flex;
-  padding-top: 36px;
-  padding-bottom: 47px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   align-items: center;
   justify-content: space-between;
 }
@@ -157,9 +158,9 @@ button {
   }
 }
 .menu {
+  padding-top: 11px;
   display: flex;
-  padding-right: 6px;
-  gap: 0 26px;
+  padding-right: 15px;
   text-transform: uppercase;
 }
 .menu a {
@@ -167,7 +168,7 @@ button {
   font-size: 13px;
   color: #000;
   font-weight: 700;
-  padding: 10px 12px;
+  padding: 10px 3px;
 }
 .menu a img {
   margin-left: 10px;
@@ -189,6 +190,21 @@ button {
 }
 .menu > li:hover > a img {
   color: #000;
+}
+.menu li:last-child {
+  padding-left: 44px;
+}
+.menu li:nth-child(5) {
+  padding-left: 28px;
+}
+.menu li:nth-child(4) {
+  padding-left: 28px;
+}
+.menu li:nth-child(3) {
+  padding-left: 44px;
+}
+.menu li:nth-child(2) {
+  padding-left: 44px;
 }
 .menu li {
   position: relative;
@@ -295,17 +311,14 @@ button {
   }
 }
 .banner {
-  padding-top: 140px;
+  padding-top: 120px;
   background-color: #81e4ed;
 }
-.banner-slider {
-  width: 100%;
-}
 .banner__container {
+  width: 1000px;
   overflow: hidden;
   position: relative;
   margin-top: 20px;
-  margin-bottom: 13px;
   background-image: linear-gradient(to top, #d05332, #d15332);
 }
 .banner__container:hover {
@@ -316,27 +329,30 @@ button {
   font-family: "lato";
   font-weight: 700;
   width: 36%;
-  padding-top: 100px;
-  padding-left: 60px;
-  padding-bottom: 120px;
-  line-height: 1.1;
+  padding-top: 91px;
+  padding-left: 61px;
+  padding-bottom: 109px;
+  line-height: 1.2;
 }
 .banner .coffee {
   position: absolute;
-  top: -12px;
-  right: 390px;
+  top: 3px;
+  right: 364px;
+  height: 93%;
 }
 .banner .messenger {
   position: absolute;
-  top: -50px;
-  right: -235px;
+  top: -22px;
+  right: -216px;
+  width: 66%;
 }
 
 .slick-dots {
   display: flex;
   justify-content: center;
-  gap: 0 25px;
-  padding-bottom: 13px;
+  gap: 0 17px;
+  padding-bottom: 14px;
+  padding-top: 6px;
 }
 .slick-dots button {
   font-size: 0;
@@ -386,8 +402,10 @@ button {
 }
 .section .container {
   display: flex;
-  gap: 0 43px;
+  gap: 0 44px;
   padding-bottom: 50px;
+  padding-top: 6px;
+  padding-left: 22px;
 }
 .section__container {
   padding-top: 62px;
@@ -396,11 +414,11 @@ button {
   flex-direction: column;
 }
 .section__title {
+  padding-left: 2px;
   display: flex;
   align-items: center;
-  gap: 0 20px;
   text-transform: uppercase;
-  padding-bottom: 18px;
+  padding-bottom: 21px;
 }
 .section__title .img {
   z-index: 20;
@@ -421,11 +439,50 @@ button {
 .section__title h2 {
   font-weight: 700;
 }
+.section__container:first-child h2 {
+  margin-top: -6px;
+  padding-left: 28px;
+}
+.section__container:first-child p {
+  padding-top: 2px;
+  margin-left: -6px;
+}
+.section__container:last-child h2 {
+  margin-top: -6px;
+  padding-left: 27px;
+}
+.section__container:nth-child(2) .section__title {
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-bottom: 28px;
+}
+.section__container:nth-child(2) h2 {
+  margin-top: -5px;
+  padding-left: 29px;
+}
+.section__container:nth-child(2) p {
+  margin-left: -6px;
+}
+.section__container:nth-child(3) .section__title {
+  padding-top: 2px;
+  padding-left: 6px;
+}
+.section__container:nth-child(3) .section__title img {
+  padding-top: 3px;
+}
+.section__container:nth-child(3) h2 {
+  margin-top: -3px;
+  padding-left: 32px;
+}
+.section__container:nth-child(3) p {
+  padding-top: 5px;
+  margin-left: -2px;
+}
 .section__content {
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5384615385;
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 .section__content p {
   color: #363636;
@@ -434,8 +491,11 @@ button {
   margin-top: auto;
   display: flex;
   align-items: center;
-  gap: 0 9px;
+  gap: 0 14px;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: -6px;
 }
 .section__btn p {
   color: #2aacc8;
@@ -477,11 +537,13 @@ button {
   border-bottom: 1px solid #dfe1e5;
 }
 .work__title {
+  margin-left: 2px;
   display: flex;
   align-items: center;
-  gap: 0 24px;
+  gap: 0 22px;
 }
 .work__title h2 {
+  padding-top: 3px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
@@ -535,12 +597,12 @@ button {
   position: absolute;
 }
 .work .slick-prev {
-  top: -40px;
-  right: 40px;
+  top: -39px;
+  right: 32px;
 }
 .work .slick-next {
-  top: -40px;
-  right: 10px;
+  top: -39px;
+  right: 0;
 }
 
 @media screen and (max-width: 1279.98px) {
@@ -566,10 +628,9 @@ button {
 }
 .company__container {
   display: flex;
-  justify-content: space-between;
 }
 .company__content {
-  width: 46%;
+  width: 44%;
 }
 .company__title {
   display: flex;
@@ -581,7 +642,7 @@ button {
   font-weight: 400;
   line-height: 1.7142857143;
   color: #363636;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
 }
 .company span {
   font-style: italic;
@@ -591,6 +652,8 @@ button {
   color: #363636;
 }
 .company__logo {
+  flex: 1;
+  padding-left: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -598,7 +661,7 @@ button {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 100px 100px;
 }
 .company__logo .list-logo .img {
   width: 100%;
@@ -613,6 +676,9 @@ button {
 }
 .company__logo .list-logo .img:hover {
   cursor: pointer;
+}
+.company__logo .company__title {
+  padding-bottom: 17px;
 }
 
 @media screen and (max-width: 1023.98px) {
@@ -630,31 +696,36 @@ button {
   }
 }
 .template {
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }
 .template__container {
-  justify-content: space-between;
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 32px;
   border: 1px solid #81e4ed;
   background-color: #e8fcfe;
 }
 .template__container p {
-  width: 61.5%;
+  width: 65.5%;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.625;
+  line-height: 1.6;
   color: #363636;
 }
 .template .download-btn {
+  margin-top: 3px;
+  margin-left: 75px;
   color: #0d0707;
   align-items: center;
   border-radius: 10px;
   display: inline-flex;
   gap: 0 20px;
-  padding: 18px;
+  padding: 18px 21px 18px;
   background-image: linear-gradient(to bottom, #80e3ec, #40bad1);
+}
+.template .download-btn h2 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1023.98px) {
@@ -667,57 +738,65 @@ button {
   }
 }
 .footer {
-  padding-top: 32px;
+  padding-top: 28px;
   background-color: #e8ebf1;
 }
 .footer__begin {
+  gap: 0 65px;
   display: grid;
-  gap: 0 55px;
-  grid-template-columns: 3fr 1fr 1.5fr 2fr 2.5fr;
+  grid-template-columns: 235px 73px 115px 140px 176px;
 }
 .footer__content p {
   font-size: 14px;
   font-weight: 400;
   color: #363636;
-  line-height: 1.2857142857;
+  line-height: 1.2;
 }
 .footer__content .open {
-  padding-bottom: 22px;
+  padding-bottom: 18px;
 }
 .footer__content:nth-child(1) h2 {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 .footer__content:nth-child(2) h2 {
-  padding-bottom: 15px;
+  padding-bottom: 3px;
 }
 .footer__content:nth-child(2) p {
   line-height: 1.8571428571;
 }
+.footer__content:nth-child(3) {
+  padding-left: 10px;
+}
 .footer__content:nth-child(3) h2 {
-  padding-bottom: 15px;
+  padding-bottom: 3px;
 }
 .footer__content:nth-child(3) p {
   line-height: 1.8571428571;
 }
 .footer__content:nth-child(4) h2 {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 .footer__content:nth-child(4) strong {
   font-size: 14px;
   font-weight: 700;
   color: #363636;
 }
+.footer__content:last-child {
+  margin-left: -5px;
+}
 .footer-list {
-  padding-top: 18px;
-  gap: 13px 20px;
+  margin-left: -7px;
+  padding-top: 15px;
+  gap: 9px 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 1fr 1fr;
 }
 .footer-list img {
   width: 100%;
 }
 .footer__end {
-  padding-top: 35px;
+  padding-top: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
