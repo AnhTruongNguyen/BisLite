@@ -375,7 +375,14 @@ button {
     width: 100%;
   }
   .banner .coffee {
-    right: 440px;
+    right: 424px;
+    top: -14px;
+    height: 75%;
+  }
+  .banner .messenger {
+    top: -22px;
+    right: -216px;
+    width: 92%;
   }
   .slick-dots {
     gap: 0 18px;
@@ -685,6 +692,12 @@ button {
   .company__container {
     gap: 0 60px;
   }
+  .company__logo {
+    padding-left: 0;
+  }
+  .company__logo .img:last-child img {
+    width: inherit;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .company__container {
@@ -735,6 +748,11 @@ button {
   }
   .template__container p {
     width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .template .download-btn {
+    margin-left: 0;
   }
 }
 .footer {
@@ -814,14 +832,10 @@ button {
   font-weight: 400;
 }
 
-@media screen and (max-width: 1279.98px) {
-  .footer__begin {
-    gap: 0 53px;
-  }
-}
 @media screen and (max-width: 1023.98px) {
   .footer__begin {
-    gap: 0 21px;
+    gap: 0 12px;
+    grid-template-columns: 209px 60px 115px 136px 176px;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -852,6 +866,9 @@ button {
   }
   .footer__content:nth-child(1) h2 {
     padding-bottom: 15px;
+  }
+  .footer__content:nth-child(3) {
+    padding-left: 0;
   }
 }
 

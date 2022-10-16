@@ -86,17 +86,12 @@
         }
     }
 }
-@media screen and (max-width: 1279.98px) {
-    .footer {
-        &__begin {
-            gap: 0 53px;
-        }
-    }
-}
+
 @media screen and (max-width: 1023.98px) {
     .footer {
         &__begin {
-            gap: 0 21px;
+            gap: 0 12px;
+            grid-template-columns: 209px 60px 115px 136px 176px;
         }
     }
 }
@@ -135,6 +130,9 @@
         &__content:nth-child(1) h2 {
             padding-bottom: 15px;
         }   
+        &__content:nth-child(3){
+            padding-left: 0;
+        }
     }
 }
 

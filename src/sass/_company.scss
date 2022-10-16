@@ -61,6 +61,14 @@
     .company__container {
         gap: 0 60px;
     }
+    .company__logo {
+        padding-left: 0;
+        .img:last-child {
+            img {
+                width: inherit;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767.98px) {
